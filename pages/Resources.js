@@ -4,7 +4,7 @@ import { getSortedPostsData } from '../lib/posts'
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-    <h1>Welcome to mywebclass.org!</h1>
+    <h1>Welcome to MyWebClass.org!</h1>
       <p>Here you can find academic articles, downloadable guides, webinars and workshops, and success stories to help you improve your skills and achieve your goals.</p>
 
       <h2>Academic Articles</h2>
@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
         <li>Webinar 3</li>
       </ul>
 
-      <h1>Success Stories</h1>
+      <h2>Success Stories</h2>
       <ul>
         <li>Story 1</li>
         <li>Story 2</li>
