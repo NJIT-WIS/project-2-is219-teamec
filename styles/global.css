@@ -26,7 +26,7 @@ header {
 header h1 {
   font-size: 2.5rem;
   margin: 0;
-  color: #9D69A3;
+  color: #22223B;
 }
 
 nav ul {
@@ -40,7 +40,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #9D69A3;
+  color: #C6DBF0;
   font-size: 1.2rem;
 }
 
@@ -64,7 +64,7 @@ li {
 }
 
 li:hover {
-  background-color: #9D69A3;
+  background-color: #C8A2C8;
   color: #fff;
 }
 
