@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import Layout from '../components/layout'
 import styles from '../styles/about.module.css'
+import Navbar from '../components/nav'
 
 export default function AboutPage () {
   return (
@@ -10,6 +11,7 @@ export default function AboutPage () {
       <Head>
         <title>About | MyWebClass</title>
       </Head>
+      <Navbar />
       <div className={styles.about}>
         <h1>About</h1>
           <p>

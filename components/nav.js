@@ -1,23 +1,18 @@
 import Link from 'next/link'
+import styles from '/components/nav.module.css'
 
 const Navbar = () => {
     return (
-        <nav className='navbar'>
-            <ul className='navbar-list'>
-                <li className='navbar-item'>
-                    <Link href="/pages/Home.js">
-                        <a className='navbar-link'>Home</a>
-                    </Link>
+        <nav className={styles.navbar}>
+            <ul className={styles.navbar_list}>
+                <li className={styles.navbar_item}>
+                    <Link className={styles.navbar_link} href="Home/">Home</Link>
                 </li>
-                <li className='navbar-item'>
-                    <Link href="/pages/Resources.js">
-                        <a className='navbar-link'>Resources</a>
-                    </Link>
+                <li className={styles.navbar_item}>
+                    <Link className={styles.navbar_link} href="Resources/">Resources</Link>
                 </li>
-                <li className='navbar-item'>
-                    <Link href="/pages/About.js">
-                        <a className='navbar-link'>About</a>
-                    </Link>
+                <li className={styles.navbar_item}>
+                    <Link className={styles.navbar_link} href="About/">About</Link>
                 </li>
             </ul>
         </nav>
