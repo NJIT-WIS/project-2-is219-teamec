@@ -1,0 +1,15 @@
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f2f2f2; /* light gray */
+  color: #546e7a; /* muted blue-gray */
+}
+
+.about h1 {
+  color: #455a64; /* darker blue-gray */
+}
+
+.about p {
+  line-height: 1.5;
+}
