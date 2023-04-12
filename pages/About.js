@@ -7,11 +7,11 @@ import Navbar from '../components/nav'
 export default function AboutPage () {
   return (
     <>
+      <Navbar />
       <Layout>
       <Head>
         <title>About | MyWebClass</title>
       </Head>
-      <Navbar />
       <div className={styles.about}>
         <h1>About</h1>
           <p>
