@@ -1,22 +1,27 @@
-import Link from 'next/link'
-import styles from '/components/nav.module.css'
+import Link from 'next/link';
+import styles from '/components/nav.module.css';
 
 const Navbar = () => {
-    return (
-        <nav className={styles.navbar}>
-            <ul className={styles.navbar_list}>
-                <li className={styles.navbar_item}>
-                    <Link className={styles.navbar_link} href="Home/">Home</Link>
-                </li>
-                <li className={styles.navbar_item}>
-                    <Link className={styles.navbar_link} href="Resources/">Resources</Link>
-                </li>
-                <li className={styles.navbar_item}>
-                    <Link className={styles.navbar_link} href="About/">About</Link>
-                </li>
-            </ul>
-        </nav>
-    )
-}
+  return (
+    <nav className={styles.navbar}>
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <Link className={styles.navbarTitle} href="Home/">MyWebClass</Link>
+        </div>
 
-export default Navbar
+        <div className="flex items-center">
+          <ul className={styles.navbarList}>
+            <li>
+                <Link className={styles.navbarLink} href="Resources/">Resources</Link>
+            </li>
+            <li>
+                <Link className={styles.navbarLink} href="About/">About</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
