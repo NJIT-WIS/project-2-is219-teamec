@@ -3,6 +3,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Layout, { siteTitle } from '../components/Layout'
 import styles from '../styles/About.module.css';
 
+
 export default function AboutPage () {
   return (
     <>
