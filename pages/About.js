@@ -9,7 +9,7 @@ export default function AboutPage () {
     <>
       <Layout>
       <Head>
-        <title>About | MyWebClass</title>
+        <title>MyWebClass | About</title>
       </Head>
       <div className={styles.about}>
         <h1>About</h1>
