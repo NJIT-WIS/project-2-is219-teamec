@@ -1,16 +1,14 @@
 import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
-import Navbar from '../components/nav'
-import styles from '../styles/About.module.css';
-import Layout, { siteTitle } from '../components/layout'
+import Layout from '../components/Layout';
+import styles from '../styles/about.module.css';
 
 export default function AboutPage () {
   return (
     <>
-      <Navbar />
       <Layout>
       <Head>
-        <title>MyWebClass | About</title>
+        <title>About | MyWebClass</title>
       </Head>
       <div className={styles.about}>
         <h1>About</h1>
