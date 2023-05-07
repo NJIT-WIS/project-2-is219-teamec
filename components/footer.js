@@ -28,7 +28,7 @@ export default function Footer() {
               <div className="column">
                   <ul>
                       <li>
-                          <Link href="/privacy">
+                          <Link href="/posts/privacy-policy">
                               <p>Privacy Policy</p>
                           </Link>
                       </li>
