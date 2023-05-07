@@ -6,7 +6,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>Services | MyWebClass.org</title>
+        <title>Services | MyWebClass</title>
       </Head>
 
       <div className="container mx-auto py-16">
