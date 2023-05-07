@@ -35,9 +35,6 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/contact">
-            <p>Privacy Policy</p>
-          </Link>
         </li>
       </ul>
     </nav>
