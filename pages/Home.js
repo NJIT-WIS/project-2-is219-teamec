@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.container}>
         <h1>Welcome to MyWebClass</h1>
         <p>Our mission is to provide high-quality, accessible web development education to students around the world. Whether you're a complete beginner or an experienced developer looking to expand your skills, we have a course for you.</p>
-        <button>Enroll Now</button>
+        <button>Learn How to Get Involved</button>
       </main>
     </>
   );

@@ -11,17 +11,17 @@ export default function Footer() {
                <tr>
                    <td><a href='Home'>Home</a></td>
                    <td>ㅤㅤ</td>
-                   <td><a href='Privacy'>Privacy Policy</a></td>
+                   <td><a href='privacy'>Privacy Policy</a></td>
                </tr>
                <tr>
-                   <td><a href='Blog'>Blog</a></td>
+                   <td><a href='blog'>Blog</a></td>
                    <td>ㅤㅤ</td>
-                   <td><a href='Contact'>Contact Us</a></td>
+                   <td><a href='contact'>Contact Us</a></td>
                </tr>
                <tr>
-                   <td><a href='Resources'>Resources</a></td>
+                   <td><a href='resources'>Resources</a></td>
                    <td>ㅤㅤ</td>
-                   <td><a href='About'>About</a></td>
+                   <td><a href='about'>About</a></td>
                </tr>
          </table>
       </div>
