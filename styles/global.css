@@ -96,3 +96,44 @@ footer p {
   color: #9D69A3;
   cursor: pointer;
 }
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #C6DBF0;
+  border-radius: 5px;
+}
+
+li:hover {
+  background-color: #C8A2C8;
+  color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #9D69A3;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  background-color: #23967F;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #C6DBF0;
+  color: #9D69A3;
+  cursor: pointer;
+}

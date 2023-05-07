@@ -1,0 +1,33 @@
+/* Navigation bar */
+.navbar {
+    height: 60px;
+    padding: 0 55px;
+  }
+  
+  /* Title */
+  .navbarTitle {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Navigation links */
+  .navbarList {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbarLink {
+    color: #919191;
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-left: 20px; */
+    text-decoration: none;
+  }
+  
+  .navbarLink:hover {
+    text-decoration: underline;
+  }  

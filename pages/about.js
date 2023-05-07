@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
-import Layout, { siteTitle } from '../components/layout'
+import Navbar from '../components/nav'
 import styles from '../styles/about.module.css';
-
+import Layout, { siteTitle } from '../components/layout'
 
 export default function AboutPage () {
   return (
     <>
+      <Navbar />
       <Layout>
       <Head>
         <title>About | MyWebClass</title>
