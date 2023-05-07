@@ -3,6 +3,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/about.module.css';
 import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 
 
 export default function AboutPage () {
@@ -12,6 +13,9 @@ export default function AboutPage () {
       <Head>
         <title>About | MyWebClass</title>
       </Head>
+        <section>
+            <Navbar/>
+        </section>
       <div className={styles.about}>
         <h1>About</h1>
           <p>

@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,6 +13,9 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Contact | MyWebClass</title>
       </Head>
+        <section>
+            <Navbar/>
+        </section>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>
