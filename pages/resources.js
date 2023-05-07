@@ -1,9 +1,13 @@
+import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 
 export default function Home({ allPostsData }) {
   return (
     <Layout>
+      <Head>
+        <title>Resources | MyWebClass</title>
+      </Head>
     <h1>Welcome to mywebclass.org!</h1>
       <p>Here you can find academic articles, downloadable guides, webinars and workshops, and success stories to help you improve your skills and achieve your goals.</p>
 
