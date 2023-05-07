@@ -9,85 +9,25 @@ export default function Footer() {
         <p>&copy; 2023 TeamEC, All rights reserved.</p>
         <table>
                <tr>
-                   <td><a href="#">Home</a></td>
+                   <td><a href="'../pages/Home.js">Home</a></td>
                    <td>ㅤㅤ</td>
                    <td><a href="#">Privacy Policy</a></td>
                </tr>
                <tr>
-                   <td><a href="#">Blog</a></td>
+                   <td><a href="'../pages/Blog.js">Blog</a></td>
                    <td>ㅤㅤ</td>
-                   <td><a href="#">Contact Us</a></td>
+                   <td><a href="'../pages/Contact.js">Contact Us</a></td>
                </tr>
                <tr>
-                   <td><a href="#">Resources</a></td>
+                   <td><a href="'../pages/Resources.js">Resources</a></td>
                    <td>ㅤㅤ</td>
-                   <td><a href="#">About</a></td>
+                   <td><a href="'../pages/About.js">About</a></td>
                </tr>
          </table>
       </div>
     </footer>
   )
 }
-
-//<tr>
-//             <td>
-//               <ul className={styles.footerLinks}>
-//                 <li>
-//                   <a href="#">Home</a>
-//                 </li>
-//                 <li>
-//                   <a href="#">Blog</a>
-//                 </li>
-//                 <li>
-//                   <a href="#">Resources</a>
-//                 </li>
-//               </ul>
-//             </td>
-//             <td>
-//               <ul className={styles.footerLinks}>
-//                 <li>
-//                   <a href="#">Privacy Policy</a>
-//                 </li>
-//                 <li>
-//                   <a href="#">Contact Us</a>
-//                 </li>
-//                 <li>
-//                   <a href="#">About</a>
-//                 </li>
-//               </ul>
-//             </td>
-//           </tr>
-
-//<table>
-//               <tr>
-//                   <td>
-//                   <ul className={styles.footerLinks}>
-//                         <li>
-//                             <a href="../pages/Home.js">Home</a>
-//                         </li>
-//                         <li>
-//                             <a href="#">Blog</a>
-//                         </li>
-//                         <li>
-//                             <a href="#">Resources</a>
-//                         </li>
-//                     </ul>
-//                   </td>
-//                   <td>
-//                     <ul className={styles.footerLinks}>
-//                         <li>
-//                             <a href="#">Privacy Policy</a>
-//                         </li>
-//                         <li>
-//                             <a href="#">Contact Us</a>
-//                         </li>
-//                         <li>
-//                             <a href="#">About</a>
-//                         </li>
-//                     </ul>
-//                   </td>
-//               </tr>
-//         </table>
 
 //<table>
 //               <tr>
