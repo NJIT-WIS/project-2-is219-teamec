@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Navbar from '../components/navbar'
 import Footer from "../components/footer";
 
 export default function Home({ allPostsData }) {
@@ -12,6 +13,9 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>MyWebClass.org</title>
       </Head>
+        <section>
+            <Navbar/>
+        </section>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>
