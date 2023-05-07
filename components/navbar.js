@@ -34,6 +34,11 @@ export default function Navbar() {
             <p>Contact</p>
           </Link>
         </li>
+        <li>
+          <Link href="/contact">
+            <p>Privacy Policy</p>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
