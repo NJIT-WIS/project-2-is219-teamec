@@ -4,7 +4,7 @@ Please READ everything I am giving you and everyone needs to submit in Canvas.
 **Run:**
 - npm install
 - npm run build <- after first install
-- npm run dev --turbo <-Startup Live Dev Server for lIve preview on http://locahhost:30000
+- npm run dev --turbo <-Startup Live Dev Server for lIve preview on http://localhost:30000
 
 ## Lecture Videos
 - [Project 2 Intro and Project 1 Debrief  Part 1](https://youtu.be/TaTOCifmREc)
@@ -40,7 +40,7 @@ Remember, the key to success in this project is consistent effort, collaboration
 
 - [Sprint Schedule and Exam Schedule for All Classes](https://docs.google.com/document/d/1-CkdhpDiD6SuJYW1jq6ufpxdQ_728eQFqJ8dAfkuK00/edit?usp=sharing)
 
-- [Project Requirements and Gradinng Rurbrics for All Projects](https://docs.google.com/document/d/1Zub2Fx11UqdyawYVh8kPn3zDytlWRUDBkhFCaIxIC1g/edit?usp=sharing)
+- [Project Requirements and Grading Rubrics for All Projects](https://docs.google.com/document/d/1Zub2Fx11UqdyawYVh8kPn3zDytlWRUDBkhFCaIxIC1g/edit?usp=sharing)
 
 ## Project Background Information and Readings
 1. [About Page](https://docs.google.com/document/d/1zdfk3Xv5A6ZEB9_Dirsp2S40j_xxixx7H-852GwuJm8/edit?usp=sharing)
@@ -55,7 +55,7 @@ Remember, the key to success in this project is consistent effort, collaboration
 
 ## General Information about Web Design and Psychology
 1. [The Power of Neurotransmitters in Persuasive Marketing: A Comprehensive Guide](https://docs.google.com/document/d/1Zr-jfcEDxAEyAwd1jlHSwbCts0M4xio0CNhmz8EPQVY/edit?usp=sharing)
-2. [Designig Sales Funnels](https://docs.google.com/document/d/1bON9Fgsrc2BANQDUHRIlSeJ6YTj9_mldkFvislsEOVc/edit?usp=sharing)
+2. [Designing Sales Funnels](https://docs.google.com/document/d/1bON9Fgsrc2BANQDUHRIlSeJ6YTj9_mldkFvislsEOVc/edit?usp=sharing)
 3. [Psychology of Choosing Imagry](https://docs.google.com/document/d/1Akh9jTF99qhYRxH76-0Yqi-n8hSZaUopjIXlVU4BEh8/edit?usp=sharing)
 4. [Basic Guide to Site Design](https://docs.google.com/document/d/12MJX-1WtigTNx4sGdUmQWOoIRYd0K1FbFF4iqIpXyQw/edit?usp=sharing)
 

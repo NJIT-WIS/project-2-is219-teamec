@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/about.module.css';
+import Footer from "../components/footer";
 
 
 export default function AboutPage () {
