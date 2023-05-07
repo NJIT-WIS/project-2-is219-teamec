@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import Navbar from '../components/nav'
-import styles from '../styles/About.module.css';
+import styles from '../styles/about.module.css';
 import Layout, { siteTitle } from '../components/layout'
 
 export default function AboutPage () {
