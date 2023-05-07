@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MyWebClass - Learn Web Development Online</title>
+        <title>MyWebClass</title>
         <meta name="description" content="MyWebClass offers online courses in web development, including HTML, CSS, JavaScript, React, and more. Enroll today and start your journey to becoming a web developer!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

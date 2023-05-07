@@ -1,24 +1,38 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Footer from "../components/footer";
-import styles from "../styles/Home.module.css";
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>MyWebClass</title>
-        <meta name="description" content="MyWebClass offers online courses in web development, including HTML, CSS, JavaScript, React, and more. Enroll today and start your journey to becoming a web developer!" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>MyWebClass.org</title>
       </Head>
-        <main className={styles.container}>
-        <h1>Welcome to MyWebClass</h1>
-        <p>Our mission is to provide high-quality, accessible web development education to students around the world. Whether you're a complete beginner or an experienced developer looking to expand your skills, we have a course for you.</p>
-        <button>Learn How to Get Involved</button>
-      </main>
+      <section className={utilStyles.headingMd}>
+        <p>[Your Self Introduction]</p>
+        <p>
+          (This is a sample website - you’ll be building a site like this in{' '}
+          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        </p>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>{title}</Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
+      </section>
         <Footer/>
     </Layout>
   )
