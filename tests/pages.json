@@ -5,8 +5,24 @@
         "title": "MyWebClass.org"
       },
       {
-        "path": "/About",
-        "title": "MyWebClass | About"
+        "path": "/about",
+        "title": "About | MyWebClass"
+      },
+      {
+        "path": "/services",
+        "title": "Services | MyWebClass"
+      },
+      {
+        "path": "/resources",
+        "title": "Resources | MyWebClass"
+      },
+      {
+        "path": "/blog",
+        "title": "Blog | MyWebClass"
+      },
+      {
+        "path": "/contact",
+        "title": "Contact | MyWebClass"
       }
     ]
 }
