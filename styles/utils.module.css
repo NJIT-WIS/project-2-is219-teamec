@@ -47,14 +47,27 @@
 .listItem {
   margin: 0 0 1.25rem;
   padding: 10px;
-  background-color: #C6DBF0;
+  background-color: #DEDEDE;
   border-radius: 5px;
 }
+
+.listItem a {
+ color: #337357;
+}
+
 .listItem:hover {
-  background-color: #C8A2C8;
+  background-color: #337357;
+  color: #fff;
+}
+
+.listItem:hover .lightText{
+  color: #DEDEDE;
+}
+
+.listItem:hover a{
   color: #fff;
 }
 
 .lightText {
-  color: #666;
+  color: black;
 }

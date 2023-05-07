@@ -4,6 +4,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background-color: #F8F8F8;
 }
 
 a {
@@ -55,6 +56,7 @@ header h1 {
 nav {
   list-style: none;
   margin-top: 2%;
+  margin: auto;
 }
 nav ul {
   list-style: none;
@@ -64,6 +66,7 @@ nav ul {
 nav li {
   margin: auto;
   text-align: center;
+  display: inline;
 }
 
 nav a {
@@ -95,7 +98,7 @@ footer .row:after {
 /* Article List Styles */
 ul {
   list-style: none;
-  padding: 0;
+  padding-left: 5%;
 }
 
 li {
