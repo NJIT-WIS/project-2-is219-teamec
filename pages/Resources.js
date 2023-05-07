@@ -9,30 +9,30 @@ export default function Home({ allPostsData }) {
 
       <h2>Academic Articles</h2>
       <ul>
-        <li>Article 1</li>
-        <li>Article 2</li>
-        <li>Article 3</li>
+        <li>Enhancing Online Learning through Interactive Technologies: A Meta-Analysis of Experimental Studies</li>
+        <li>The Impact of Student Engagement on Online Learning Outcomes: A Review of Literature</li>
+        <li>Designing Effective Online Assessments: A Framework for Course Developers and Instructors</li>
       </ul>
 
       <h2>Downloadable Guides</h2>
       <ul>
-        <li>Guide 1</li>
-        <li>Guide 2</li>
-        <li>Guide 3</li>
+        <li>10 Tips for Successful Online Learning: A Student's Guide to Navigating Virtual Classes</li>
+        <li>Designing Engaging and Effective Online Courses: A Guide for Educators</li>
+        <li>How to Build a Strong Online Learning Community: Strategies for Instructors and Students</li>
       </ul>
 
       <h2>Webinars and Workshops</h2>
       <ul>
-        <li>Webinar 1</li>
-        <li>Webinar 2</li>
-        <li>Webinar 3</li>
+        <li>Creating an Engaging and Interactive Online Classroom: Best Practices for Educators</li>
+        <li>Navigating the Challenges of Online Learning: Tips and Strategies for Students and Instructors</li>
+        <li>Using Technology to Enhance Student Learning: Innovative Approaches and Tools for Online Instruction</li>
       </ul>
 
       <h1>Success Stories</h1>
       <ul>
-        <li>Story 1</li>
-        <li>Story 2</li>
-        <li>Story 3</li>
+        <li>From Struggling Student to Online Learning Success: How One Student Overcame Adversity and Achieved Academic Excellence</li>
+        <li>How One Educator Transformed Their Online Course and Increased Student Engagement: A Success Story</li>
+        <li>Breaking Barriers: The Inspiring Story of a Non-Traditional Online Learner's Journey to Academic Success</li>
       </ul>
 
     </Layout>
