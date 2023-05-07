@@ -1,4 +1,7 @@
-## Privacy Policy
+---
+title: 'Privacy Policy'
+date: '2023-04-07'
+---
 
 This privacy policy explains how we collect, use, and protect your personal information. By using our website, you consent to the terms of this policy.
 
