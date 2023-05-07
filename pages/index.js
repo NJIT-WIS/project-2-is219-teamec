@@ -10,7 +10,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>MyWebClass.org</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>[Please place your]</p>

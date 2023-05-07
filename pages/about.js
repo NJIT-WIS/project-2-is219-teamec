@@ -10,7 +10,7 @@ export default function AboutPage () {
       <Navbar />
       <Layout>
       <Head>
-        <title>MyWebClass | About</title>
+        <title>About | MyWebClass</title>
       </Head>
       <div className={styles.about}>
         <h1>About</h1>
