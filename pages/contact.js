@@ -40,7 +40,7 @@ export default function Contact() {
         <div className={styles.contact}>
           <label className={styles.field}>
             Name:
-            <input className={styles.input} type="text" value={name} placeholder="First and late name" onChange={(e) => setName(e.target.value)} />
+            <input className={styles.input} type="text" value={name} placeholder="Enter your name" onChange={(e) => setName(e.target.value)} />
           </label>
         </div>
         <br></br>
