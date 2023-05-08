@@ -18,11 +18,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
-    "remark-html": "^15.0.1"
+    "remark-html": "^15.0.1",
+    "showdown": "^2.1.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.32.1",
     "lighthouse": "^10.1.0",
+    "marked": "^5.0.1",
     "node-fetch": "^3.3.1",
     "playwright": "^1.32.1",
     "playwright-lighthouse": "^3.0.0",

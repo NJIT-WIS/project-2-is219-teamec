@@ -34,6 +34,8 @@ export default function Navbar() {
             <p>Contact</p>
           </Link>
         </li>
+        <li>
+        </li>
       </ul>
     </nav>
   );

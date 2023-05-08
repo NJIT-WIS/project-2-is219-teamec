@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div>
-        <p>&copy; 2023 TeamEC, All rights reserved.</p>
+        <p>Copyright &copy; 2023 TeamEC, All rights reserved.</p>
           <div className="row">
               <div className="column">
                   <ul>
@@ -28,7 +28,7 @@ export default function Footer() {
               <div className="column">
                   <ul>
                       <li>
-                          <Link href="/privacy">
+                          <Link href="/posts/privacy-policy">
                               <p>Privacy Policy</p>
                           </Link>
                       </li>
@@ -49,21 +49,3 @@ export default function Footer() {
     </footer>
   )
 }
-
-//<table>
-//                <tr>
-//                    <td><a href='Home'>Home</a></td>
-//                    <td>ㅤㅤ</td>
-//                    <td><a href='Privacy'>Privacy Policy</a></td>
-//                </tr>
-//                <tr>
-//                    <td><a href='Blog'>Blog</a></td>
-//                    <td>ㅤㅤ</td>
-//                    <td><a href='Contact'>Contact Us</a></td>
-//                </tr>
-//                <tr>
-//                    <td><a href='Resources'>Resources</a></td>
-//                    <td>ㅤㅤ</td>
-//                    <td><a href='About'>About</a></td>
-//                </tr>
-//          </table>

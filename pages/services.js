@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
+import Navbar from "../components/navbar";
 
 export default function Home({ allPostsData }) {
   return (
@@ -8,6 +9,10 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>Services | MyWebClass</title>
       </Head>
+
+      <section>
+            <Navbar/>
+        </section>
 
       <div className="container mx-auto py-16">
         <h1 className="text-4xl font-bold text-center mb-12">Our Services</h1>
@@ -42,7 +47,7 @@ export default function Home({ allPostsData }) {
               We provide customized training and support to schools and districts based on their specific needs and goals. Our team of experienced educators and consultants work closely with clients to design and implement professional development programs, technology integration plans, and other initiatives.
             </p>
 
-            <a href="/customized-training" className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">Learn more</a>
+            <a href="/contact" className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">Learn more</a>
           </div>
         </div>
       </div>
