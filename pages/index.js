@@ -12,7 +12,7 @@ import styles from "../styles/Home.module.css";
 const { heroContent, heroWrapper, imageWrapper } = styles;
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("your GA measurement id");
+ReactGA.initialize("G-50WBN19X53");
 
 export default function Home({ allPostsData }) {
   return (
