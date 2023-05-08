@@ -55,6 +55,13 @@ header h1 {
   color: #22223B;
 }
 
+/* Image */
+
+.Image {
+  width: 100%;
+  margin-right: 10%;
+}
+
 /* Navbar */
 
 nav {
@@ -176,10 +183,10 @@ footer li a:hover {
 /* Button Styles */
 .btn {
   display: inline-block;
-  background-color: #23967F;
+  background-color: #337357;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 1px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -188,4 +195,14 @@ footer li a:hover {
   background-color: #C6DBF0;
   color: #9D69A3;
   cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  background-color: #337357;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
