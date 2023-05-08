@@ -10,6 +10,9 @@ import Image from "next/image";
 import images from "../public/images";
 import styles from "../styles/Home.module.css";
 const { heroContent, heroWrapper, imageWrapper } = styles;
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("your GA measurement id");
 
 export default function Home({ allPostsData }) {
   return (
