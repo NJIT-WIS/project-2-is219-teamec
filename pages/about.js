@@ -31,6 +31,7 @@ export default function AboutPage () {
           Thank you for choosing MyWebClass as your learning partner. We look forward to helping you achieve your goals and reach new heights in your career!
         </p>
       </div>
+      <Footer/>
     </Layout>
     </>
   );

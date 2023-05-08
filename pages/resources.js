@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Home({ allPostsData }) {
   return (
@@ -42,7 +43,7 @@ export default function Home({ allPostsData }) {
         <li>How One Educator Transformed Their Online Course and Increased Student Engagement: A Success Story</li>
         <li>Breaking Barriers: The Inspiring Story of a Non-Traditional Online Learner's Journey to Academic Success</li>
       </ul>
-
+      <Footer/>
     </Layout>
   )
 }
