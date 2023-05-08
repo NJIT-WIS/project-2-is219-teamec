@@ -13,3 +13,13 @@
 .about p {
   line-height: 1.5;
 }
+
+.about button {
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #337357;
+  color: #f8f8f8;
+  font-size: 1.5rem;
+  cursor: pointer;
+  minWidth: 0;
+}

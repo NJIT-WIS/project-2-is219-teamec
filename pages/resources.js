@@ -3,6 +3,8 @@ import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import styles from "../styles/about.module.css";
+import Link from "next/link";
 
 export default function Home({ allPostsData }) {
   return (
@@ -43,6 +45,11 @@ export default function Home({ allPostsData }) {
         <li>How One Educator Transformed Their Online Course and Increased Student Engagement: A Success Story</li>
         <li>Breaking Barriers: The Inspiring Story of a Non-Traditional Online Learner's Journey to Academic Success</li>
       </ul>
+
+      <div className={styles.button}>
+              <Link href="/contact"><button>Sign Up For Our Webinars</button></Link>
+          </div>
+
       <Footer/>
     </Layout>
   )

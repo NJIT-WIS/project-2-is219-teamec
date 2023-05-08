@@ -4,6 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/about.module.css';
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Link from 'next/link';
 
 
 export default function AboutPage () {
@@ -30,6 +31,10 @@ export default function AboutPage () {
         <p>
           Thank you for choosing MyWebClass as your learning partner. We look forward to helping you achieve your goals and reach new heights in your career!
         </p>
+          <div className={styles.button}>
+              <Link href="/contact"><button>Volunteer with us now!</button></Link>
+          </div>
+
       </div>
       <Footer/>
     </Layout>

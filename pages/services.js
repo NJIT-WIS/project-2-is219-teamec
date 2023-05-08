@@ -6,6 +6,7 @@ import Image from "next/image";
 import images from '../public/images/index'
 import styles from '../styles/Home.module.css';
 import Footer from "../components/footer";
+import Link from "next/link";
 
 export default function Home({ allPostsData }) {
   return (
@@ -26,8 +27,8 @@ export default function Home({ allPostsData }) {
             <Image
           priority
           src={images.pd}
-          width={500}
-          height={400}
+          width={400}
+          height={200}
           objectPosition="center"
           layout = "responsive"
           alt="pd example"
@@ -60,8 +61,8 @@ export default function Home({ allPostsData }) {
             <Image
           priority
           src={images.cts}
-          width={500}
-          height={400}
+          width={400}
+          height={200}
           objectPosition="center"
           layout = "responsive"
           alt="pd example"
@@ -78,6 +79,11 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
       </div>
+
+        <div className={styles.button}>
+              <Link href="/contact"><button>Subscribe to Our Mailing List!</button></Link>
+          </div>
+
       <Footer/>
     </Layout>
   )
