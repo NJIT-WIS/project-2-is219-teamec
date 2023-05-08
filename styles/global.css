@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #f8f8f8;
+  color: #337357;
 }
 
 p a {
@@ -149,7 +149,8 @@ li {
 }
 
 li:hover {
-  color: #fff;
+  color: #f97068;
+  cursor: pointer;
 }
 
 /* Footer Styles */
@@ -167,9 +168,17 @@ footer p {
   color: #f8f8f8;
 }
 
+footer a {
+  color: #f8f8f8;
+}
+
 footer ul {
   list-style: none;
   padding: 5%;
+}
+
+footer li:hover {
+  color: #fff;
 }
 
 footer li p:hover {
