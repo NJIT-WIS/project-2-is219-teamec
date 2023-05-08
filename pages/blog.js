@@ -6,12 +6,28 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Script from "next/script";
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
         <title>Blog | MyWebClass</title>
+          <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
+          <Script
+            id='google-analytics'
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-50WBN19X53', {
+                        page_path: window.location.pathname,
+                    });
+                `,
+                }}
+          />
       </Head>
         <section>
             <Navbar/>
