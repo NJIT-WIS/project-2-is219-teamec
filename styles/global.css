@@ -59,12 +59,12 @@ header h1 {
 
 nav {
   list-style: none;
-  padding-inline: 2%;
+  /*padding-inline: 2%;*/
 }
 nav ul {
   list-style: none;
   display: flex;
-  background-color: #337357;
+  background-color: #003d5b;
   border-radius: 10px;
 }
 
@@ -83,8 +83,8 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
-  color: #337357;
-  background-color: #337357;
+  color: #f8f8f8;
+  background-color: #003d5b;
   font-size: 1.2rem;
   margin:auto;
 }
@@ -92,12 +92,12 @@ nav a:hover {
 /* Maximum width */
 @media (max-width: 685px) {
 nav {
-    list-style: none;
+  list-style: none;
   padding-inline: 2%;
 }
 
   nav a {
-  color: #337357;
+  color: #003d5b;
 }
 
 nav ul {
