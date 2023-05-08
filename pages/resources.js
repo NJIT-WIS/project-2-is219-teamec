@@ -15,6 +15,7 @@ export default function Home({ allPostsData }) {
       <section>
             <Navbar/>
         </section>
+      <div className={styles.about}>
     <h1>Welcome to mywebclass.org!</h1>
       <p>Here you can find academic articles, downloadable guides, webinars and workshops, and success stories to help you improve your skills and achieve your goals.</p>
 
@@ -46,7 +47,7 @@ export default function Home({ allPostsData }) {
         <li>Breaking Barriers: The Inspiring Story of a Non-Traditional Online Learner's Journey to Academic Success</li>
       </ul>
 
-      <div className={styles.button}>
+
               <Link href="/contact"><button>Sign Up For Our Webinars.</button></Link>
           </div>
 

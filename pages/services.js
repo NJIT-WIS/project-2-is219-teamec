@@ -4,7 +4,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Navbar from "../components/navbar";
 import Image from "next/image";
 import images from '../public/images/index'
-import styles from '../styles/Home.module.css';
+import styles from '../styles/about.module.css';
 import Footer from "../components/footer";
 import Link from "next/link";
 
@@ -19,6 +19,7 @@ export default function Home({ allPostsData }) {
             <Navbar/>
         </section>
 
+    <div className={styles.about}>
       <div className="container mx-auto py-16">
         <h1 className="text-4xl font-bold text-center mb-12">Our Services</h1>
 
@@ -83,9 +84,10 @@ export default function Home({ allPostsData }) {
         <div className={styles.button}>
               <Link href="/contact"><button>Subscribe to Our Mailing List.</button></Link>
           </div>
-
+        </div>
       <Footer/>
     </Layout>
+
   )
 }
 
