@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
         <li>How One Educator Transformed Their Online Course and Increased Student Engagement: A Success Story</li>
         <li>Breaking Barriers: The Inspiring Story of a Non-Traditional Online Learner's Journey to Academic Success</li>
       </ul>
-      <Footer>
+      <Footer/>
     </Layout>
   )
 }
