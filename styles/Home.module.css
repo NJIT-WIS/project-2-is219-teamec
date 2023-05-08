@@ -8,24 +8,27 @@
 .container h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #2a2a2a;
+  overflow: hidden;
+  color: #fff;
 }
 
 .container p {
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 2rem;
-  color: #444444
+  overflow: hidden;
+  color: #fff;
 }
 
 .container button {
+  border-radius: 9999px;
+  padding: 12px 24px;
   background-color: #3f51b5;
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  minWidth: 0;
 }
 
 .container button:hover {
@@ -50,26 +53,34 @@
   background-color: #455a64;
 }
 
-.container hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("public/images/hero.jpg");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  padding: 0px;
 }
 
+.heroImage {
+  margin: 10px;
+}
 
-.container hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.heroWrapper {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+}
+
+.imageWrapper {
+  z-index: -1;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: #444444;
 }

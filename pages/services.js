@@ -47,7 +47,7 @@ export default function Home({ allPostsData }) {
               We provide customized training and support to schools and districts based on their specific needs and goals. Our team of experienced educators and consultants work closely with clients to design and implement professional development programs, technology integration plans, and other initiatives.
             </p>
 
-            <a href="/customized-training" className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">Learn more</a>
+            <a href="/contact" className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out">Learn more</a>
           </div>
         </div>
       </div>
