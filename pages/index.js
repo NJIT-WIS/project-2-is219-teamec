@@ -6,6 +6,10 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Navbar from '../components/navbar'
 import Footer from "../components/footer";
+import Image from "next/image";
+import images from "../public/images";
+import styles from "../styles/Home.module.css";
+const { heroContent, heroWrapper, imageWrapper } = styles;
 
 export default function Home({ allPostsData }) {
   return (
@@ -13,15 +17,28 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>MyWebClass.org</title>
       </Head>
-        <section>
             <Navbar/>
-        </section>
         <section className={utilStyles.headingMd}>
-            <p>[Your Self Introduction]</p>
-            <p>
-            (This is a sample website - you’ll be building a site like this in{' '}
-            <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-            </p>
+            <div className={heroWrapper}>
+      <div className={imageWrapper}>
+        <Image
+          priority
+          src={images.hero}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          alt="hero image example"
+        />
+      </div>
+
+      <div className={heroContent}>
+        <main className={styles.container}>
+            <h1>MyWebClass</h1>
+            <p>MyWebClass offers online courses in web development, including HTML, CSS, JavaScript, React, and more. Enroll today and start your journey to becoming a web developer!</p>
+            <Link href="/services"><button>Learn How to Get Involved</button></Link>
+      </main>
+      </div>
+    </div>
         </section>
         <Footer/>
     </Layout>
