@@ -81,7 +81,7 @@ export default function Home({ allPostsData }) {
       </div>
 
         <div className={styles.button}>
-              <Link href="/contact"><button>Subscribe to Our Mailing List!</button></Link>
+              <Link href="/contact"><button>Subscribe to Our Mailing List.</button></Link>
           </div>
 
       <Footer/>
