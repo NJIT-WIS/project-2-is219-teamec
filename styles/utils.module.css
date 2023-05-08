@@ -39,20 +39,19 @@
 
 .list {
   list-style: none;
-  margin: 0;
-  list-style: none;
+  margin: auto;
   padding: 0;
+
 }
 
 .listItem {
   margin: 0 0 1.25rem;
-  padding: 10px;
   background-color: #DEDEDE;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .listItem a {
- color: #337357;
+  color: #337357;
 }
 
 .listItem:hover {
@@ -65,7 +64,7 @@
 }
 
 .listItem:hover a{
-  color: #fff;
+  color: #F8F8F8;
 }
 
 .lightText {
