@@ -6,6 +6,7 @@ import Image from "next/image";
 import images from '../public/images/index'
 import styles from '../styles/Home.module.css';
 import Footer from "../components/footer";
+import Link from "next/link";
 
 export default function Home({ allPostsData }) {
   return (
@@ -78,6 +79,9 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
       </div>
+
+        <Link href="/contact"><button>Subscribe to Our Mailing List</button></Link>
+
       <Footer/>
     </Layout>
   )
