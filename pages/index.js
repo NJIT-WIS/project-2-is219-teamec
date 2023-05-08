@@ -10,6 +10,7 @@ import Image from "next/image";
 import images from "../public/images";
 import styles from "../styles/Home.module.css";
 const { heroContent, heroWrapper, imageWrapper } = styles;
+import Script from "next/script";
 
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-50WBN19X53");
@@ -17,17 +18,24 @@ ReactGA.initialize("G-50WBN19X53");
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
+                <Script
+                        id='google-analytics'
+                        strategy="afterInteractive"
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-50WBN19X53', {
+                            page_path: window.location.pathname,
+                            });
+                        `,
+                        }}
+                />
       <Head>
         <title>MyWebClass.org</title>
       </Head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-50WBN19X53');
-</script>
             <Navbar/>
         <section className={utilStyles.headingMd}>
             <div className={heroWrapper}>
