@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import images from '../public/images/index'
 import Image from "next/image";
-import Hero from '../components/Hero'
 import styles from '../styles/Home.module.css';
 import { getSortedPostsData } from '../lib/posts'
 import Navbar from "../components/navbar";
