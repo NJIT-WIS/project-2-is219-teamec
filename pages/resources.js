@@ -5,12 +5,28 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import styles from "../styles/about.module.css";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
         <title>Resources | MyWebClass</title>
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
+          <Script
+            id='google-analytics'
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-50WBN19X53', {
+                        page_path: window.location.pathname,
+                    });
+                `,
+                }}
+          />
       </Head>
       <section>
             <Navbar/>

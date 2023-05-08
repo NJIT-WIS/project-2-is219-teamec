@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>MyWebClass.org</title>
           <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
-        <Script
+          <Script
             id='google-analytics'
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
@@ -34,7 +34,7 @@ export default function Home({ allPostsData }) {
                     });
                 `,
                 }}
-        />
+          />
       </Head>
 
             <Navbar/>
