@@ -16,6 +16,15 @@ export default function Home() {
         <meta name="description" content="MyWebClass offers online courses in web development, including HTML, CSS, JavaScript, React, and more. Enroll today and start your journey to becoming a web developer!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-50WBN19X53');
+</script>
         <section>
             <Navbar/>
         </section>
