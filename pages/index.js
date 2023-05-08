@@ -20,8 +20,7 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>MyWebClass.org</title>
-      </Head>
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
+          <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
         <Script
             id='google-analytics'
             strategy="afterInteractive"
@@ -36,6 +35,8 @@ export default function Home({ allPostsData }) {
                 `,
                 }}
         />
+      </Head>
+
             <Navbar/>
         <section className={utilStyles.headingMd}>
             <div className={heroWrapper}>
