@@ -47,7 +47,7 @@ export default function Home({ allPostsData }) {
       </ul>
 
       <div className={styles.button}>
-              <Link href="/contact"><button>Sign Up For Our Webinars</button></Link>
+              <Link href="/contact"><button>Sign Up For Our Webinars.</button></Link>
           </div>
 
       <Footer/>

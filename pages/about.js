@@ -32,7 +32,7 @@ export default function AboutPage () {
           Thank you for choosing MyWebClass as your learning partner. We look forward to helping you achieve your goals and reach new heights in your career!
         </p>
           <div className={styles.button}>
-              <Link href="/contact"><button>Volunteer with us now!</button></Link>
+              <Link href="/contact"><button>Volunteer with us now.</button></Link>
           </div>
 
       </div>
