@@ -1,38 +1,66 @@
 import Head from 'next/head'
+import { useState } from 'react';
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
 import Footer from "../components/footer";
-import Navbar from "../components/navbar";
+import Navbar from '../components/navbar'
+import axios from 'axios';
+import styles from "../styles/contact.module.css"
 
-export default function Home({ allPostsData }) {
+export default function Contact() {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      try {
+        await axios.post('/api/sendMail', { name, email, message });
+        alert('Message sent successfully!');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } catch (error) {
+        console.log(error);
+        alert('Message failed to send.');
+      }
+    };
+
   return (
     <Layout home>
       <Head>
         <title>Contact | MyWebClass</title>
       </Head>
-        <section>
-            <Navbar/>
-        </section>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <section>
+        <Navbar/>
       </section>
+        <form onSubmit={handleSubmit}>
+        <div className={styles.contact}>
+          <label className={styles.field}>
+            Name:
+            <input className={styles.input} type="text" value={name} placeholder="Enter your name" onChange={(e) => setName(e.target.value)} />
+          </label>
+        </div>
+        <br></br>
+        <div className={styles.contact}>
+          <label className={styles.field}>
+            Email:
+            <input className={styles.input} type="email" value={email} placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} />
+          </label>
+        </div>
+        <br></br>
+        <div className={styles.contact}>
+          <label className={styles.field}>
+            Message:
+            <textarea className={styles.input} value={message} placeholder="Enter message" onChange={(e) => setMessage(e.target.value)} />
+          </label>
+        </div>
+        <br></br>
+          <button className={styles.button} type="submit">Send Message</button>
+        </form>
         <Footer/>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
 }
