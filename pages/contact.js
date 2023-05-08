@@ -7,6 +7,7 @@ import Navbar from '../components/navbar'
 import axios from 'axios';
 import styles from "../styles/contact.module.css"
 import Script from "next/script";
+import Subscribe from "../components/subscribe";
 
 export default function Contact() {
 
@@ -52,30 +53,7 @@ export default function Contact() {
       <section>
         <Navbar/>
       </section>
-        <form onSubmit={handleSubmit}>
-        <div className={styles.contact}>
-          <label className={styles.field}>
-            Name:
-            <input className={styles.input} type="text" value={name} placeholder="Enter your name" onChange={(e) => setName(e.target.value)} />
-          </label>
-        </div>
-        <br></br>
-        <div className={styles.contact}>
-          <label className={styles.field}>
-            Email:
-            <input className={styles.input} type="email" value={email} placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} />
-          </label>
-        </div>
-        <br></br>
-        <div className={styles.contact}>
-          <label className={styles.field}>
-            Message:
-            <textarea className={styles.input} value={message} placeholder="Enter message" onChange={(e) => setMessage(e.target.value)} />
-          </label>
-        </div>
-        <br></br>
-          <button className={styles.button} type="submit">Send Message</button>
-        </form>
+        <Subscribe/>
         <Footer/>
     </Layout>
   )
