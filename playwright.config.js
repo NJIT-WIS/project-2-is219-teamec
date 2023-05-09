@@ -52,7 +52,7 @@ module.exports = defineConfig({
     html: ({ testInfo }) => {
       const testTitlePath = testInfo.titlePath().join(' - ').replace(/[\s"'<>|]/g, '_');
       const pagePath = testInfo.annotations.find(({ type }) => type === 'page').value.path;
-      const reportPath = path.join(__dirname, 'reports', pagePath, testInfo.project.name, testTitlePath, 'report.html');
+      const reportPath = path.join(__dirname, 'reports', 'test-results', 'report.html');
       return reportPath;
     },
     junit: ({ result }) => path.join(__dirname, `reports/playwright/${result.testFile.replace(/\.js$/, '.xml')}`),
@@ -62,7 +62,7 @@ module.exports = defineConfig({
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
       const testTitlePath = testInfo.titlePath().join(' - ').replace(/[\s"'<>|]/g, '_');
       const pagePath = testInfo.annotations.find(({ type }) => type === 'page').value.path;
-      const reportPath = path.join(outputDir, pagePath, testInfo.project.name, testTitlePath, timestamp, 'video.webm');
+      const reportPath = path.join(__dirname, 'reports', 'test-results', 'video.webm');
       console.log(`Video report path: ${reportPath}`);
       return reportPath;
     },
