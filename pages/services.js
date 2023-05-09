@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
+import { getSortedPostsData } from '../lib/posts';
 import Navbar from "../components/navbar";
 import Image from "next/image";
 import images from '../public/images/index'
@@ -14,6 +14,11 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Head>
         <title>Services | MyWebClass</title>
+        <meta name="description" content="Explore our range of professional development and customized training services at MyWebClass. Enhance your skills, knowledge, and leadership in curriculum design, assessment and evaluation, instructional strategies, technology integration, and leadership development." />
+        <meta name="keywords" content="services, professional development, customized training, curriculum design, assessment, instructional strategies, technology integration, leadership development" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Services | MyWebClass" />
+        <meta name="twitter:description" content="Explore our range of professional development and customized training services at MyWebClass. Enhance your skills, knowledge, and leadership in curriculum design, assessment and evaluation, instructional strategies, technology integration, and leadership development." />
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
           <Script
             id='google-analytics'
