@@ -19,6 +19,9 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
+          <Script
+          src="https://www.googleoptimize.com/optimize.js?id=OPT-WL334HT"
+          />
         <title>MyWebClass.org</title>
         <meta name="description" content="Learn web development with MyWebClass! Our online courses cover HTML, CSS, JavaScript, React, and more. Start your journey to becoming a web developer today and enroll in our comprehensive and engaging courses." />
         <meta name="keywords" content="web development, HTML, CSS, JavaScript, React" />
@@ -48,9 +51,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KNBPD4C');`,
     }}
-          />
-          <script
-          dangerouslySetInnerHTML={{__html: 'src="https://www.googleoptimize.com/optimize.js?id=OPT-WL334HT"',}}
           />
       </Head>
         <noscript
