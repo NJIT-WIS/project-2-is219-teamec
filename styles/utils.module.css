@@ -30,6 +30,7 @@
 }
 
 .borderCircle {
+  position: fixed;
   float: left;
   border-radius: 9999px;
   margin-right: 50%;

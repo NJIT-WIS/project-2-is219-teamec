@@ -52,6 +52,7 @@ export default function Layout({ children, home }) {
                 alt={name}
               />
             </Link>
+            <div className={utilStyles.space}></div>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>
                 {name}
