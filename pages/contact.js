@@ -1,14 +1,14 @@
 import Head from 'next/head'
-import { useState } from 'react';
 import Layout, { siteTitle } from '../components/layout'
+import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Footer from "../components/footer";
 import Navbar from '../components/navbar'
 import Script from "next/script";
 
-export default function Contact() {
+export default function Contact({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>Contact | MyWebClass</title>
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
@@ -109,4 +109,13 @@ export default function Contact() {
         <Footer/>
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
