@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
+import { getSortedPostsData } from '../lib/posts';
+import Link from 'next/link';
+import Date from '../components/date';
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Script from "next/script";
@@ -13,6 +13,11 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>Blog | MyWebClass</title>
+        <meta name="description" content="Discover insightful articles and tutorials on web development, programming, and more in the MyWebClass blog. Stay up to date with the latest trends and enhance your skills." />
+        <meta name="keywords" content="blog, web development, programming, tutorials" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Blog | MyWebClass" />
+        <meta name="twitter:description" content="Discover insightful articles and tutorials on web development, programming, and more in the MyWebClass blog. Stay up to date with the latest trends and enhance your skills." />
           <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
           <Script
             id='google-analytics'
