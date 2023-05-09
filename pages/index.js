@@ -17,7 +17,7 @@ ReactGA.initialize("G-50WBN19X53");
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>MyWebClass.org</title>
         <meta name="description" content="Learn web development with MyWebClass! Our online courses cover HTML, CSS, JavaScript, React, and more. Start your journey to becoming a web developer today and enroll in our comprehensive and engaging courses." />

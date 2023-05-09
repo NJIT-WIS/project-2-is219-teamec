@@ -1,14 +1,15 @@
-import Head from 'next/head';
-import { useState } from 'react';
-import Layout, { siteTitle } from '../components/layout';
-import Link from 'next/link';
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
+import { getSortedPostsData } from '../lib/posts'
+import React from 'react';
+import Link from 'next/link'
 import Footer from "../components/footer";
 import Navbar from '../components/navbar';
 import Script from "next/script";
 
-export default function Contact() {
+export default function Contact({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>Contact | MyWebClass</title>
         <meta name="description" content="Get in touch with MyWebClass for any inquiries, feedback, or collaboration opportunities. We are here to assist you with your web development journey!" />
@@ -114,4 +115,13 @@ export default function Contact() {
         <Footer/>
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }

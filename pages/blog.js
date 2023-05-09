@@ -10,7 +10,7 @@ import Script from "next/script";
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>Blog | MyWebClass</title>
         <meta name="description" content="Discover insightful articles and tutorials on web development, programming, and more in the MyWebClass blog. Stay up to date with the latest trends and enhance your skills." />

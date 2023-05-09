@@ -4,6 +4,7 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  font-family: 'Times New Roman', Times, serif ;
 }
 
 .headingXl {
@@ -18,6 +19,9 @@
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  float: right;
 }
 
 .headingMd {
@@ -26,7 +30,9 @@
 }
 
 .borderCircle {
+  float: left;
   border-radius: 9999px;
+  margin-right: 50%;
 }
 
 .colorInherit {
