@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
+import { getSortedPostsData } from '../lib/posts';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import styles from "../styles/about.module.css";
@@ -12,6 +12,11 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Head>
         <title>Resources | MyWebClass</title>
+        <meta name="description" content="Explore a collection of academic articles, downloadable guides, webinars, workshops, and success stories on MyWebClass. Enhance your skills, gain knowledge, and achieve your goals with our valuable resources." />
+        <meta name="keywords" content="resources, academic articles, downloadable guides, webinars, workshops, success stories" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Resources | MyWebClass" />
+        <meta name="twitter:description" content="Explore a collection of academic articles, downloadable guides, webinars, workshops, and success stories on MyWebClass. Enhance your skills, gain knowledge, and achieve your goals with our valuable resources." />
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
           <Script
             id='google-analytics'

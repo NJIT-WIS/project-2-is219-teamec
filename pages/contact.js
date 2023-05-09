@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
+import React from 'react';
 import Link from 'next/link'
 import Footer from "../components/footer";
-import Navbar from '../components/navbar'
+import Navbar from '../components/navbar';
 import Script from "next/script";
 
 export default function Contact({ allPostsData }) {
@@ -11,6 +12,11 @@ export default function Contact({ allPostsData }) {
     <Layout>
       <Head>
         <title>Contact | MyWebClass</title>
+        <meta name="description" content="Get in touch with MyWebClass for any inquiries, feedback, or collaboration opportunities. We are here to assist you with your web development journey!" />
+        <meta name="keywords" content="contact, inquiries, feedback, collaboration, web development" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Contact | MyWebClass" />
+        <meta name="twitter:description" content="Get in touch with MyWebClass for any inquiries, feedback, or collaboration opportunities. We are here to assist you with your web development journey!" />
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
           <Script
             id='google-analytics'
