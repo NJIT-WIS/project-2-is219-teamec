@@ -44,5 +44,4 @@ jobs:
         with:
           name: test-results
           path: |
-            ./test-results
-            ./reports
+            ./reports/test-results/
