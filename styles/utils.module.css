@@ -26,6 +26,8 @@
 }
 
 .borderCircle {
+  margin-right: 300%;
+  position: fixed;
   border-radius: 9999px;
 }
 
