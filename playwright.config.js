@@ -49,22 +49,10 @@ module.exports = defineConfig({
 
   // Specify the directory to save the test report files
   reporterOptions: {
-    html: ({ testInfo }) => {
-      const testTitlePath = testInfo.titlePath().join(' - ').replace(/[\s"'<>|]/g, '_');
-      const pagePath = testInfo.annotations.find(({ type }) => type === 'page').value.path;
-      const reportPath = path.join(__dirname, 'reports', pagePath, testInfo.project.name, testTitlePath, 'report.html');
-      return reportPath;
-    },
-    junit: ({ result }) => path.join(__dirname, `reports/playwright/${result.testFile.replace(/\.js$/, '.xml')}`),
+    html: path.join(__dirname, 'reports', 'test-results', 'report.html'),
+    junit: ({ result }) => path.join(__dirname, 'reports', 'playwright', `${result.testFile.replace(/\.js$/, '.xml')}`),
 
     // Add video report option
-    video: ({ outputDir, testInfo }) => {
-      const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-      const testTitlePath = testInfo.titlePath().join(' - ').replace(/[\s"'<>|]/g, '_');
-      const pagePath = testInfo.annotations.find(({ type }) => type === 'page').value.path;
-      const reportPath = path.join(outputDir, pagePath, testInfo.project.name, testTitlePath, timestamp, 'video.webm');
-      console.log(`Video report path: ${reportPath}`);
-      return reportPath;
-    },
+    video: path.join(__dirname, 'reports', 'test-results', 'video.webm'),
   },
 });
