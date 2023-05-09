@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Footer from "../components/footer";
 import Navbar from '../components/navbar'
 import Script from "next/script";
-import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 export default function Contact() {
   return (
