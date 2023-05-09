@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import { getSortedPostsData } from '../lib/posts'
-import Layout, { siteTitle } from '../components/layout'
+import Head from 'next/head';
+import { getSortedPostsData } from '../lib/posts';
+import Layout, { siteTitle } from '../components/layout';
 import styles from '../styles/about.module.css';
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
@@ -14,6 +14,11 @@ export default function AboutPage () {
       <Layout>
       <Head>
         <title>About | MyWebClass</title>
+        <meta name="description" content="Learn about MyWebClass, an online platform offering courses and tutorials on web development, programming, and more. Join us to learn new skills and advance your career!" />
+        <meta name="keywords" content="web development, programming, online courses, tutorials" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About | MyWebClass" />
+        <meta name="twitter:description" content="Learn about MyWebClass, an online platform offering courses and tutorials on web development, programming, and more. Join us to learn new skills and advance your career!" />
           <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-50WBN19X53"/>
           <Script
             id='google-analytics'
